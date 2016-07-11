@@ -1,7 +1,7 @@
 {
-  "name": "smooch-bot-example",
+  "name": "resume-bot",
   "version": "1.0.0",
-  "description": "Smooch Bot Example Apps",
+  "description": "Resume bot for David Barkhausen",
   "author": "Andrew Lavers <alavers@system42.net> (http://smooch.io/)",
   "scripts": {
     "start": "node heroku"
@@ -12,6 +12,7 @@
     "express": "^4.13.4",
     "hbs": "^4.0.0",
     "jsonwebtoken": "^5.7.0",
+    "lodash": "^4.6.1",
     "smooch-bot": "^1.0.1",
     "smooch-core": "^0.0.15"
   },
