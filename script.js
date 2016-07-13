@@ -58,11 +58,11 @@ module.exports = new Script({
     speak: {
         receive: (bot, message) => {
 
-            let upperText = message.text.trim().toUpperCase();
+            let upperText = message.text.trim().toUpperCase().replace(" ","_");
 
             function updateSilent() {
                 switch (upperText) {
-                    case "CONNECT ME":
+                    case "CONNECT_ME":
                         return bot.setProp("silent", true);
                     case "DISCONNECT":
                         return bot.setProp("silent", false);
