@@ -50,7 +50,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say('So you want to learn about Esther? Just say HELLO to get started.')
+            return bot.say('So you want to learn about David? Just say HELLO to get started.')
                 .then(() => 'speak');
         }
     },
@@ -81,7 +81,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say(`I didn't understand that.`).then(() => 'speak');
+                    return bot.say(`So, I'm good at structured conversations, but stickers, emoji, and sentences still confuse me (my creator's working on that!). Say 'more' to chat about something else, or 'menu' to see all discussion topics.`).then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
