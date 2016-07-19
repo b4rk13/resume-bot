@@ -91,6 +91,7 @@ module.exports = new Script({
                 _.each(lines, function(line) {
                     line = line.trim();
                     p = p.then(function() {
+                        console.log(upperText);
                         console.log(line);
                         return bot.say(line);
                     });
