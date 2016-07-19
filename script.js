@@ -58,7 +58,7 @@ module.exports = new Script({
     speak: {
         receive: (bot, message) => {
 
-            let upperText = message.text.trim().toUpperCase().replace(" ","_");
+            let upperText = message.text.trim().replace(" ","_").toUpperCase();
 
             function updateSilent() {
                 switch (upperText) {
