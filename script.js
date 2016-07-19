@@ -81,6 +81,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
+                    console.log(upperText);
                     return bot.say(`So, I'm good at structured conversations, but stickers, emoji, and sentences still confuse me (my creator's working on that!). Say 'more' to chat about something else, or 'menu' to see all discussion topics.`).then(() => 'speak');
                 }
 
